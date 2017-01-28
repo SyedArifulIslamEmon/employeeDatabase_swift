@@ -1,5 +1,5 @@
 //  main.swift
-//  employee_database_swift
+//  employee_database
 //
 //  Created by Pratyush Pratik on 27/01/17.
 //  Copyright © 2017 Pratyush Pratik. All rights reserved.
@@ -25,7 +25,7 @@ let sx = Sex()
 
 //structure of consistant data of an employee
 
-struct employeeConsistentData{
+struct EmployeeConsistentData{
     
     var id, employee_id, first_name, last_name, date_of_birth, email_id, address, hire_date, fathers_name, mothers_name, spouse_name: String!
     var contact: Int!
@@ -124,7 +124,7 @@ let el = EducationLevel()
 
 //structure of inconsistant data of an employee
 
-struct employeeInconsistentData{
+struct EmployeeInconsistentData{
     
     var status = Status()
     var department = Department()
@@ -149,93 +149,93 @@ struct employeeInconsistentData{
 
 //class for data of an employee
 
-class employeeDatabase{
+class EmployeeDatabase{
     
     
     
     //data of employee1
     
-    var consistent_data_set_employee1 = employeeConsistentData(id: "1", employee_id: "123", first_name: "deep", last_name: "singh", contact: Int(9090909099),email_id: "abc@gmail.com", address: "abc colony", hire_date: "05/01/2017", date_of_birth: "14/01/1995", sex: .male, fathers_name: "mr.abc", mothers_name: "mrs.abc", spouse_name: "nil")
+    var consistent_data_set_employee1 = EmployeeConsistentData(id: "1", employee_id: "123", first_name: "deep", last_name: "singh", contact: Int(9090909099),email_id: "abc@gmail.com", address: "abc colony", hire_date: "05/01/2017", date_of_birth: "14/01/1995", sex: .male, fathers_name: "mr.abc", mothers_name: "mrs.abc", spouse_name: "nil")
     
-    var inconsistent_data_set_employee1 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(350000), education_level: .undergraduate, maritial_status: .unmarried, bank_name: "abcxyz", account_number: "123", ifsc_code: "xyz")
+    var inconsistent_data_set_employee1 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(350000), education_level: .undergraduate, maritial_status: .unmarried, bank_name: "abcxyz", account_number: "123", ifsc_code: "xyz")
     
     
     //data of employee2
     
     
-    var consistent_data_set_employee2 = employeeConsistentData(id: "2", employee_id: "124", first_name: "prats", last_name: "sinha", contact: Int(8888888880),email_id: "abd@gmail.com", address: "abd colony", hire_date: "05/01/2017", date_of_birth: "14/02/1995", sex: .male, fathers_name: "mr.abd", mothers_name: "mrs.abd", spouse_name: "nil")
+    var consistent_data_set_employee2 = EmployeeConsistentData(id: "2", employee_id: "124", first_name: "prats", last_name: "sinha", contact: Int(8888888880),email_id: "abd@gmail.com", address: "abd colony", hire_date: "05/01/2017", date_of_birth: "14/02/1995", sex: .male, fathers_name: "mr.abd", mothers_name: "mrs.abd", spouse_name: "nil")
     
-    var inconsistent_data_set_employee2 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(300000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abdxyz", account_number: "124", ifsc_code: "xyz")
+    var inconsistent_data_set_employee2 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(300000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abdxyz", account_number: "124", ifsc_code: "xyz")
     
     
     //data of employee3
     
     
-    var consistent_data_set_employee3 = employeeConsistentData(id: "3", employee_id: "125", first_name: "pratik", last_name: "sinha", contact: Int(8888888881),email_id: "abe@gmail.com", address: "abe colony", hire_date: "05/01/2017", date_of_birth: "14/03/1995", sex: .male, fathers_name: "mr.abe", mothers_name: "mrs.abe", spouse_name: "nil")
+    var consistent_data_set_employee3 = EmployeeConsistentData(id: "3", employee_id: "125", first_name: "pratik", last_name: "sinha", contact: Int(8888888881),email_id: "abe@gmail.com", address: "abe colony", hire_date: "05/01/2017", date_of_birth: "14/03/1995", sex: .male, fathers_name: "mr.abe", mothers_name: "mrs.abe", spouse_name: "nil")
     
-    var inconsistent_data_set_employee3 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(360000), education_level: .postgraduate, maritial_status: .unmarried, bank_name: "abexyz", account_number: "125", ifsc_code: "xyz")
+    var inconsistent_data_set_employee3 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(360000), education_level: .postgraduate, maritial_status: .unmarried, bank_name: "abexyz", account_number: "125", ifsc_code: "xyz")
     
     
     //data of employee4
     
     
-    var consistent_data_set_employee4 = employeeConsistentData(id: "4", employee_id: "126", first_name: "praty", last_name: "sinha", contact: Int(8888888882),email_id: "abf@gmail.com", address: "abf colony", hire_date: "05/01/2017", date_of_birth: "14/04/1995", sex: .male, fathers_name: "mr.abf", mothers_name: "mrs.abf", spouse_name: "nil")
+    var consistent_data_set_employee4 = EmployeeConsistentData(id: "4", employee_id: "126", first_name: "praty", last_name: "sinha", contact: Int(8888888882),email_id: "abf@gmail.com", address: "abf colony", hire_date: "05/01/2017", date_of_birth: "14/04/1995", sex: .male, fathers_name: "mr.abf", mothers_name: "mrs.abf", spouse_name: "nil")
     
-    var inconsistent_data_set_employee4 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(370000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abfxyz", account_number: "126", ifsc_code: "xyz")
+    var inconsistent_data_set_employee4 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(370000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abfxyz", account_number: "126", ifsc_code: "xyz")
     
     
     //data of employee5
     
     
-    var consistent_data_set_employee5 = employeeConsistentData(id: "5", employee_id: "127", first_name: "pratyush", last_name: "sinha", contact: Int(8888888883), email_id: "abg@gmail.com", address: "abg colony", hire_date: "05/01/2017", date_of_birth: "14/05/1995", sex: .male, fathers_name: "mr.abg", mothers_name: "mrs.abg", spouse_name: "nil")
+    var consistent_data_set_employee5 = EmployeeConsistentData(id: "5", employee_id: "127", first_name: "pratyush", last_name: "sinha", contact: Int(8888888883), email_id: "abg@gmail.com", address: "abg colony", hire_date: "05/01/2017", date_of_birth: "14/05/1995", sex: .male, fathers_name: "mr.abg", mothers_name: "mrs.abg", spouse_name: "nil")
     
-    var inconsistent_data_set_employee5 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(350000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abgxyz", account_number: "127", ifsc_code: "xyz")
+    var inconsistent_data_set_employee5 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(350000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abgxyz", account_number: "127", ifsc_code: "xyz")
     
     
     //data of employee6
     
     
-    var consistent_data_set_employee6 = employeeConsistentData(id: "6", employee_id: "128", first_name: "megha", last_name: "singh", contact: Int(8888888884),email_id: "abh@gmail.com", address: "abh colony", hire_date: "05/01/2017", date_of_birth: "14/06/1995", sex: .male, fathers_name: "mr.abh", mothers_name: "mrs.abh", spouse_name: "nil")
+    var consistent_data_set_employee6 = EmployeeConsistentData(id: "6", employee_id: "128", first_name: "megha", last_name: "singh", contact: Int(8888888884),email_id: "abh@gmail.com", address: "abh colony", hire_date: "05/01/2017", date_of_birth: "14/06/1995", sex: .male, fathers_name: "mr.abh", mothers_name: "mrs.abh", spouse_name: "nil")
     
-    var inconsistent_data_set_employee6 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(390000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abhxyz", account_number: "128", ifsc_code: "xyz")
+    var inconsistent_data_set_employee6 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(390000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abhxyz", account_number: "128", ifsc_code: "xyz")
     
     
     //data of employee7
     
     
-    var consistent_data_set_employee7 = employeeConsistentData(id: "7", employee_id: "129", first_name: "deep", last_name: "singh", contact: Int(8888888885),email_id: "abi@gmail.com", address: "abi colony", hire_date: "05/01/2017", date_of_birth: "14/07/1995", sex: .male, fathers_name: "mr.abi", mothers_name: "mrs.abi", spouse_name: "nil")
+    var consistent_data_set_employee7 = EmployeeConsistentData(id: "7", employee_id: "129", first_name: "deep", last_name: "singh", contact: Int(8888888885),email_id: "abi@gmail.com", address: "abi colony", hire_date: "05/01/2017", date_of_birth: "14/07/1995", sex: .male, fathers_name: "mr.abi", mothers_name: "mrs.abi", spouse_name: "nil")
     
-    var inconsistent_data_set_employee7 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(350000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abixyz", account_number: "129", ifsc_code: "xyz")
+    var inconsistent_data_set_employee7 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(350000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abixyz", account_number: "129", ifsc_code: "xyz")
     
     
     //data of employee8
     
     
-    var consistent_data_set_employee8 = employeeConsistentData(id: "8", employee_id: "130", first_name: "aneja", last_name: "singh", contact: Int(8888888886),email_id: "abj@gmail.com", address: "abj colony", hire_date: "05/01/2017", date_of_birth: "14/08/1995", sex: .male, fathers_name: "mr.abj", mothers_name: "mrs.abj", spouse_name: "nil")
+    var consistent_data_set_employee8 = EmployeeConsistentData(id: "8", employee_id: "130", first_name: "aneja", last_name: "singh", contact: Int(8888888886),email_id: "abj@gmail.com", address: "abj colony", hire_date: "05/01/2017", date_of_birth: "14/08/1995", sex: .male, fathers_name: "mr.abj", mothers_name: "mrs.abj", spouse_name: "nil")
     
-    var inconsistent_data_set_employee8 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(450000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abjxyz", account_number: "130", ifsc_code: "xyz")
+    var inconsistent_data_set_employee8 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(450000), education_level: .graduate, maritial_status: .unmarried, bank_name: "abjxyz", account_number: "130", ifsc_code: "xyz")
     
     
     //data of employee9
     
     
-    var consistent_data_set_employee9 = employeeConsistentData(id: "9", employee_id: "131", first_name: "ram", last_name: "singh", contact: Int(8888888887),email_id: "abk@gmail.com", address: "abk colony", hire_date: "05/01/2017", date_of_birth: "14/09/1995", sex: .male, fathers_name: "mr.abk", mothers_name: "mrs.abk", spouse_name: "nil")
+    var consistent_data_set_employee9 = EmployeeConsistentData(id: "9", employee_id: "131", first_name: "ram", last_name: "singh", contact: Int(8888888887),email_id: "abk@gmail.com", address: "abk colony", hire_date: "05/01/2017", date_of_birth: "14/09/1995", sex: .male, fathers_name: "mr.abk", mothers_name: "mrs.abk", spouse_name: "nil")
     
-    var inconsistent_data_set_employee9 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(550000), education_level: .postgraduate, maritial_status: .unmarried, bank_name: "abkxyz", account_number: "131", ifsc_code: "xyz")
+    var inconsistent_data_set_employee9 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(550000), education_level: .postgraduate, maritial_status: .unmarried, bank_name: "abkxyz", account_number: "131", ifsc_code: "xyz")
     
     
     //data of employee10
     
     
-    var consistent_data_set_employee10 = employeeConsistentData(id: "10", employee_id: "132", first_name: "shyam", last_name: "singh", contact: Int(8888888888),email_id: "abl@gmail.com", address: "abl colony", hire_date: "05/01/2017", date_of_birth: "14/10/1995", sex: .male, fathers_name: "mr.abl", mothers_name: "mrs.abl", spouse_name: "nil")
+    var consistent_data_set_employee10 = EmployeeConsistentData(id: "10", employee_id: "132", first_name: "shyam", last_name: "singh", contact: Int(8888888888),email_id: "abl@gmail.com", address: "abl colony", hire_date: "05/01/2017", date_of_birth: "14/10/1995", sex: .male, fathers_name: "mr.abl", mothers_name: "mrs.abl", spouse_name: "nil")
     
-    var inconsistent_data_set_employee10 = employeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(375000), education_level: .undergraduate, maritial_status: .unmarried, bank_name: "ablxyz", account_number: "132", ifsc_code: "xyz")
+    var inconsistent_data_set_employee10 = EmployeeInconsistentData(status: .active, department: .ios, designation: "software developer", salary: Double(375000), education_level: .undergraduate, maritial_status: .unmarried, bank_name: "ablxyz", account_number: "132", ifsc_code: "xyz")
     
 }
 
 //created object of class employeeDatabase
 
-let database:employeeDatabase = employeeDatabase()
+let database:EmployeeDatabase = EmployeeDatabase()
 
 //created an array
 
@@ -273,9 +273,9 @@ print("array index of max salary employee : \(index!)\n")
 
 //creating variables of structures and saving data
 
-var consistent : [employeeConsistentData] = []
+var consistent : [EmployeeConsistentData] = []
 
-var inconsistent : [employeeInconsistentData] = []
+var inconsistent : [EmployeeInconsistentData] = []
 
 consistent = [database.consistent_data_set_employee1,database.consistent_data_set_employee2,database.consistent_data_set_employee3,database.consistent_data_set_employee4,database.consistent_data_set_employee5,database.consistent_data_set_employee6,database.consistent_data_set_employee7,database.consistent_data_set_employee8,database.consistent_data_set_employee9,database.consistent_data_set_employee10]
 
@@ -307,4 +307,3 @@ print("maritial_status  :       \(inconsistent[index!].maritial_status.rawValue)
 print("bank_name        :       \(inconsistent[index!].bank_name!)\n")
 print("account_number   :       \(inconsistent[index!].account_number!)\n")
 print("ifsc_code        :       \(inconsistent[index!].ifsc_code!)\n")
-
